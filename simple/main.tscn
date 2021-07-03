@@ -16,6 +16,7 @@ centered = false
 script = ExtResource( 2 )
 
 [node name="ViewportContainer" type="ViewportContainer" parent="."]
+modulate = Color( 0.490196, 0.490196, 0.490196, 1 )
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
