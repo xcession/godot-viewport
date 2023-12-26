@@ -1,8 +1,8 @@
-extends Sprite
+extends Sprite2D
 
 
 # Get sizes of bounds and image
-onready var parentViewportWidth: float = get_viewport().size.x
+@onready var parentViewportWidth: float = get_viewport().size.x
 var iconWidth: float = self.get_texture().get_width()
 
 # Movement speed
