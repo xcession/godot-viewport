@@ -2,8 +2,8 @@ extends Sprite2D
 
 
 # Get sizes of bounds and image
-@onready var parentViewportWidth: float = get_viewport().size.x
-var iconWidth: float = self.get_texture().get_width()
+@onready var parent_viewport_width: float = get_viewport().size.x
+var icon_width: float = self.get_texture().get_width()
 
 # Movement speed
 var speed: float = 150.0
@@ -17,7 +17,7 @@ var state: int = MoveState.MOVE_RIGHT
 
 
 func _physics_process(delta: float) -> void:
-	if self.position.x + iconWidth >= parentViewportWidth:
+	if self.position.x + icon_width >= parent_viewport_width:
 		state = MoveState.MOVE_LEFT
 	if self.position.x <= 0:
 		state = MoveState.MOVE_RIGHT
