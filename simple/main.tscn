@@ -11,7 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite1" type="Sprite2D" parent="."]
 texture = ExtResource("1_v54s8")
 centered = false
 script = ExtResource("2")
